@@ -1,0 +1,101 @@
+:root{
+    font-family: sans-serif, consolas;
+    font-size: 16px;
+    --even-dark-blue: rgba(0,0,41,0.6);
+    --dark-blue: rgba(8,2,121,1);
+    --blue: rgba(8,2,121,1);
+    --light-blue: rgba(8,29,161,0.8);
+    --black-blue: rgb(10, 10, 50);
+    --white: rgb(240, 240, 220);
+    color: var(--white);
+  }
+  *{
+    border-width: 1px;
+    border: none;
+  }
+  body{
+    margin: 10px;
+    padding: 5px;
+  background: rgb(8,2,121);
+  background: linear-gradient(
+    320deg, 
+    var(--dark-blue) 0%, 
+    var(--light-blue) 50%, 
+    var(--dark-blue) 100% 
+    );
+    }
+  input, button, textarea, select{
+    border-radius: 10%;
+    background-color: var(--black-blue);
+    padding: 0.5rem;
+    color: var(--white);
+    text-align: left;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  #title, #description{
+    text-align: center;
+    text-decoration: underline rgb(124,100,200);
+  }
+  
+  label{
+    margin: 1rem;
+    display:block;
+  }
+  #survey-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #survey-form *{
+    margin-bottom: 5px;
+  }
+  form{
+    
+    padding: 1.5rem;
+    border-radius: 5%;
+    background-color: var(--even-dark-blue);
+    max-width: 80%;
+    min-width: 150px;
+  }
+  #main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  input[type="radio"], input[type="checkbox"]{
+    display: none;
+  }
+  span{
+    display: inline-block;
+    position: relative;
+    height: 2em;
+    width: 2em;
+    background: black;
+    border-radius: 100%;
+  }
+  label{
+    font-size: 2em;
+    cursor: pointer;
+  }
+  label input:checked ~ SPAN{
+    box-shadow:
+    0px 0px 30px 0px cyan;
+  }
+  span:after{
+    content: "";
+    position: absolute;
+    border: solid white;
+    border-width: 0 0.30em 0.30em 0;
+    transform: rotate(45deg);
+    width: 0.5em;
+    height: 1em;
+    left: 0,6em;
+    top: 0.25em;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  
+  input[type="checkbox"]:checked ~ SPAN:after, input[type="radio"]:checked ~ SPAN:after{
+    opacity: 1;
+  }
