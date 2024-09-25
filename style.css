@@ -12,8 +12,6 @@
     --first-gradient: rgb(95, 164, 210);
     --second-gradient: rgb(2, 61, 87);
     --third-gradient: rgb(7, 10, 74);
-
-
   }
   
   *{
@@ -32,7 +30,7 @@
     );
     }
   input, button, textarea, select{
-    border-radius: 10%;
+    border-radius: 0.2rem;
     background-color: var(--black-blue);
     padding: 0.5rem;
     color: var(--white);
@@ -42,7 +40,7 @@
   }
   #title{
     text-align: center;
-    text-decoration: underline rgb(49, 67, 238);
+    text-decoration: underline rgb(49, 238, 137);
   }
 
   #description{
