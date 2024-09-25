@@ -1,13 +1,19 @@
 :root{
-    font-family: sans-serif, consolas;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, consolas;
     font-size: 16px;
     --even-dark-blue: rgba(0,0,41,0.6);
     --dark-blue: rgba(8,2,121,1);
-    --blue: rgba(8,2,121,1);
-    --light-blue: rgba(8,29,161,0.8);
+    --blue: rgb(9, 5, 76);
+    --light-blue: rgba(2, 84, 97, 0.8);
     --black-blue: rgb(10, 10, 50);
     --white: rgb(240, 240, 220);
     color: var(--white);
+
+    --first-gradient: rgb(3, 5, 38);
+    --second-gradient: rgb(2, 61, 87);
+    --third-gradient: rgb(7, 10, 74);
+
+
   }
   *{
     border-width: 1px;
@@ -19,9 +25,9 @@
   background: rgb(8,2,121);
   background: linear-gradient(
     320deg, 
-    var(--dark-blue) 0%, 
-    var(--light-blue) 50%, 
-    var(--dark-blue) 100% 
+    var(--first-gradient) 0%, 
+    var(--second-gradient) 50%, 
+    var(--third-gradient) 100% 
     );
     }
   input, button, textarea, select{
@@ -33,9 +39,13 @@
     font-size: 1rem;
     margin: 1rem;
   }
-  #title, #description{
+  #title{
     text-align: center;
-    text-decoration: underline rgb(124,100,200);
+    text-decoration: underline rgb(49, 67, 238);
+  }
+
+  #description{
+    text-align: center;
   }
   
   label{
