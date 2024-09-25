@@ -9,7 +9,7 @@
     --white: rgb(240, 240, 220);
     color: var(--white);
 
-    --first-gradient: rgb(3, 5, 38);
+    --first-gradient: rgb(95, 164, 210);
     --second-gradient: rgb(2, 61, 87);
     --third-gradient: rgb(7, 10, 74);
 
@@ -26,9 +26,9 @@
   background: rgb(8,2,121);
   background: linear-gradient(
     320deg, 
-    var(--first-gradient) 0%, 
-    var(--second-gradient) 50%, 
-    var(--third-gradient) 100% 
+    var(--second-gradient) 0%, 
+    var(--first-gradient) 50%, 
+    var(--second-gradient) 100% 
     );
     }
   input, button, textarea, select{
@@ -91,7 +91,6 @@
   }
   label{
     font-size: 2em;
-    cursor: pointer;
   }
   label input:checked ~ SPAN{
     box-shadow:
