@@ -15,18 +15,14 @@
   }
   
   *{
-    border-width: 1px;
     border: none;
   }
   body{
-    margin: 10px;
-    padding: 5px;
-  background: rgb(8,2,121);
-  background: linear-gradient(
-    320deg, 
-    var(--second-gradient) 0%, 
-    var(--first-gradient) 50%, 
-    var(--second-gradient) 100% 
+    background: linear-gradient(
+      320deg, 
+      var(--second-gradient) 0%, 
+      var(--first-gradient) 50%, 
+      var(--second-gradient) 100% 
     );
     }
   input, button, textarea, select{
@@ -48,7 +44,7 @@
   }
   
   label{
-    margin: 1rem;
+    margin: 0.5rem;
     display:block;
   }
   #survey-form{
@@ -56,12 +52,9 @@
     flex-direction: column;
     justify-content: center;
   }
-  #survey-form *{
-    margin-bottom: 5px;
-  }
   form{
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     background-color: var(--even-dark-blue);
     max-width: 80%;
     min-width: 150px;
@@ -76,25 +69,26 @@
     font-weight: 900;
   }
 
+
+  /* style of checkbox and radio */
   input[type="radio"], input[type="checkbox"]{
     display: none;
   }
-  span{
-    display: inline-block;
-    position: relative;
-    height: 2em;
-    width: 2em;
+  .radio,
+  .checkbox{
+    display: block;
+    position:relative;
+    height: 2rem;
+    width: 2rem;
     background: black;
-    border-radius: 100%;
+    border-width: 0;
+    margin:0;
+    margin-bottom: 0;
+    padding:0;
+    border:0;
   }
-  label{
-    font-size: 2em;
-  }
-  label input:checked ~ SPAN{
-    box-shadow:
-    0px 0px 30px 0px cyan;
-  }
-  span:after{
+  .radio:after,
+  .checkbox:after{
     content: "";
     position: absolute;
     border: solid white;
@@ -102,10 +96,26 @@
     transform: rotate(45deg);
     width: 0.5em;
     height: 1em;
-    left: 0,6em;
+    left: 0.6em;
     top: 0.25em;
     opacity: 0;
     transition: 0.3s ease;
+  }
+  .radio{
+    border-radius: 100%;
+  }
+  .checkbox-text{
+    display: block;
+    position: relative;
+    padding-left: 0.5rem;
+  }
+  .checkbox-container{
+    display:flex;
+    align-items:center;
+  }
+  label input:checked ~ SPAN{
+    box-shadow:
+    0px 0px 30px 0px cyan;
   }
   
   input[type="checkbox"]:checked ~ SPAN:after, input[type="radio"]:checked ~ SPAN:after{
