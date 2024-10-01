@@ -1,6 +1,6 @@
-# E-Commerce Web Application
+# Survey-Form 
 
-> This project is part of the Full-Stack Web Development Bootcamp. It demonstrates the creation of a full-stack web application using React, Node.js, and MongoDB. The goal of the project is to build a simplified e-commerce site where users can browse products, add them to a shopping cart, and proceed to checkout.
+> This project is part of the freeCodeCamp Bootcamp: HTML, CSS and Responsive Design. It demonstrates the creation of different projects, displaying every kind of techniques and concepts such us flex-box, semantic HTML, HTML forms, and more.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@
 
 ## Overview
 
-This e-commerce web application allows users to view a list of products, search for items, and add them to their shopping cart. Users can also register and log in to the app, and proceed to the checkout process. This project was built as part of the Full-Stack Web Development Bootcamp to apply knowledge in front-end, back-end, and database development.
+This project displays makes the student create an HTML form, working with labels and different kinds of inputs and some verification in the client side.
 
 ### Live Demo
 
